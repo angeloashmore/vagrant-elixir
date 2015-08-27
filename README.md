@@ -1,6 +1,6 @@
 # Vagrant with Elixir
 
-Basic Vagrant setup for Elixir Development.
+Basic Vagrant setup for Elixir development.
 
 Utilizes the [`ubuntu/trusty64`][0] box.
 
