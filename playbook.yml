@@ -4,5 +4,3 @@
   sudo: yes
   roles:
     - role: jacoelho.elixir
-      elixir_erlang_version: 18.0
-      elixir_version: 1.0.5
