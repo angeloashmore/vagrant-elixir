@@ -6,8 +6,8 @@ Utilizes the [`ubuntu/trusty64`][0] box.
 
 ## Requirements
 
-* Vagrant (tested with 1.7.4)
-* Ansible (tested with 1.9.2)
+* Vagrant (tested with 1.8.1)
+* Ansible (tested with 2.0.0.2)
 
 ## Instructions
 
@@ -16,9 +16,17 @@ Utilizes the [`ubuntu/trusty64`][0] box.
   $ git clone https://github.com/angeloashmore/vagrant-elixir.git
   ~~~
 
+  **Note**: If you will be building a project based on this repository, perform
+  a shallow clone and remove the `.git` directory:
+
+  ~~~ shell
+  $ git clone --depth=1 https://github.com/angeloashmore/vagrant-elixir.git
+  $ rm -rf !$/.git
+  ~~~
+
 2. Install the Ansible roles:
   ~~~ shell
-  $ ansible-galaxy install -r roles.yaml
+  $ ansible-galaxy install -r roles.yml
   ~~~
 
 3. Boot the VM:
